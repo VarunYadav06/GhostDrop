@@ -132,7 +132,7 @@ def init_connection() -> Client:
 
 supabase = init_connection()
 STORAGE_BUCKET = "vault_files"
-APP_URL = "http://localhost:8501" # Change this to your actual network IP to test mobile, or Streamlit Cloud URL
+APP_URL = "https://ghostdrop.streamlit.app" # Change this to your actual network IP to test mobile, or Streamlit Cloud URL
 
 def generate_pin() -> str:
     charset = "".join(c for c in string.ascii_uppercase + string.digits if c not in "0O1I")
